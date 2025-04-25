@@ -1,0 +1,41 @@
+.bg{
+    background-color: #1f1f60;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navb{
+    width: 100%;
+    max-width: none;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.navb a{
+    float: right;
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    font-size: 25;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+
+.navb a.active{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+
+.navb button{
+    float: right;
+    text-align: center;
+    padding: 10px;
+    font-size: 25;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
