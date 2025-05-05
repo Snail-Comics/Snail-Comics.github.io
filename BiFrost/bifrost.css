@@ -1,0 +1,173 @@
+
+.text {
+    color: whitesmoke;
+    font-size: 24px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    filter: drop-shadow(0px 0px 18px #000000);
+}
+
+.text-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#BG-redfade{
+    background-image: linear-gradient(black, black, darkred);
+    padding-top: 50px;
+}
+
+#BG-term{
+    background-image: linear-gradient(black, cyan, black);
+    padding-top: 50px;
+}
+
+#BG-snow{
+    background-image: url("christian-spuller-Oaec-W0b2ss-unsplash.jpg");
+    background-size: 100% 100%;
+    padding-top: 50px;
+}
+
+.BG-normal{
+    background-color: #000000;
+    padding-top: 50px;
+}
+
+.yrsa {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .wave-text span {
+    display: inline-block;
+    font-size: 2rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes lights {
+0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+
+.citylight {
+    display: inline; 
+    font-size: 24px;
+  animation: lights 5s 750ms linear infinite;
+}
+
+.line{
+    display: inline;
+}
+
+.glitch-text {
+    display: inline;
+    font-size: 24px;
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    display: inline;
+    content: 'Hound of Tindalos';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(211, 192, 27);
+    background: transparent;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(2px, -2px);
+    }
+    60% {
+        transform: translate(-1px, 1px);
+    }
+    80% {
+        transform: translate(1px, -1px);
+    }
+}
