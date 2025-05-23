@@ -2,6 +2,7 @@
     background-color: #000000;
       margin: 0%;
       padding: 0%;
+      
 }
 .card-cust{
 margin-top: 50px;
@@ -24,6 +25,13 @@ margin-right: 75px;
     margin-left: auto;
     margin-right: auto;
    max-width: 100%;
+}
+
+.splash-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10%;
 }
 
 #BG-redfade{
@@ -53,10 +61,24 @@ margin-right: 75px;
     font-weight: 400;
     font-style: normal;
   }
+
+  .navlink {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .card-cust{
+    margin: 10px;
+  }
+
+  .brand{
+    font-family: "Delius", serif;
+    font-size: 20px;
+  }
   
   .wave-text span {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
     animation: wave 2s ease-in-out infinite;
 }
 
