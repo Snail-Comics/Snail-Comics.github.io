@@ -120,6 +120,13 @@ body {
     font-style: normal;
 }
 
+.titleDark {
+    color: black;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .text {
     color: white;
     font-family: "Delius", serif;
@@ -128,3 +135,13 @@ body {
     font-size: 18px;
     text-align: justify;
 }
+
+.textDark {
+    color: black;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: justify;
+}
+
