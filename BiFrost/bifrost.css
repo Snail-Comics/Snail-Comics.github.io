@@ -50,6 +50,23 @@ margin-right: 75px;
     padding-top: 50px;
 }
 
+.BG-neph{
+    background-image: linear-gradient(black, black, rgb(55, 18, 104));
+    padding-top: 50px;
+}
+
+.BG-preg{
+    background-image: url("pawel-czerwinski-A5r-1fKWvXI-unsplash.jpg");
+    background-size: 100% 100%;
+    padding-top: 50px;
+}
+
+#BG-sec{
+  background-image: url("umanoide-tHS9j3HWT1s-unsplash.jpg");
+    background-size: 100% 100%;
+    padding-top: 50px;  
+}
+
 .BG-normal{
     background-color: #000000;
     padding-top: 50px;
@@ -61,6 +78,13 @@ margin-right: 75px;
     font-weight: 400;
     font-style: normal;
   }
+
+.gaegu-regular {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(189, 3, 3);
+}
 
   .navlink {
     font-size: 18px;
