@@ -1,1 +1,1 @@
-BiFrost OCT round 1 vs Undead
+BiFrost OCT round one vs Undead
