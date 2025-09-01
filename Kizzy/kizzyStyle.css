@@ -69,3 +69,13 @@ div.buttons {
     text-decoration: none;
    
 }
+
+@keyframes blueflash {
+  to {
+    background-color: #beecfa;
+    background-image: none;
+  }
+}
+.flash {
+  animation: blueflash 0.56s alternate ease-out;
+}
