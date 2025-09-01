@@ -15,8 +15,10 @@ document.addEventListener("keyup", e => {
 
 function next() {
     pageNo++;
+     fire();
     document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
+   
 }
 
 function prev() {
@@ -25,8 +27,10 @@ function prev() {
     if (pageNo < 1){
         pageNo = 1;
     }
+    fire();
     document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
+    
 }
 
 function end() {
@@ -34,4 +38,16 @@ function end() {
     document.getElementById("page").src = pageNo + '.jpg';
 }
 
+function fire(){
+       if (pageNo >= 8 && pageNo <= 11)
+    {
+        bgChange.classList.add("fire");
+        bgChange.classList.remove("body");
+    }
+    else 
+    {
+        bgChange.classList.add("body");
+        bgChange.classList.remove("fire");
+    }
+}
 

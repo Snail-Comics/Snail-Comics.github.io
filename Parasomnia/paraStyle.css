@@ -2,6 +2,10 @@
     background-color: rgb(46, 35, 54);
 }
 
+.fire{
+    background-image: url("maxim-tajer-x3S1aGQNgro-unsplash.jpg");
+}
+
 img.pages {
     display: block;
     margin-top: 20px;
