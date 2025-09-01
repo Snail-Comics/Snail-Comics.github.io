@@ -1,0 +1,81 @@
+.body {
+    background-color: rgb(0, 0, 0);
+    background-image: url("kiwihug-3gifzboyZk0-unsplash.jpg");
+}
+
+img.pages {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.buttons {
+ text-align: center;
+}
+
+.button{
+    background-color: rgb(73, 182, 167);
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 32px;
+    margin: 5px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(42, 218, 209);
+}
+
+.navb{
+    width: 100%;
+    max-width: none;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navb a.active{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;  display:inline-block;
+}
+
+
+.navb button{
+    float: right;
+    text-align: center;
+    padding: 10px;
+    font-size: 25;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+#nav-logo{
+    font-size: 18px;
+    text-align: center;
+    font-family: "Delius", serif;
+    padding: 10px;
+}
+
+.navb a{
+    float: left;
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 25px;
+    text-decoration: none;
+   
+}
+
+@keyframes blueflash {
+  to {
+    background-color: #beecfa;
+    background-image: none;
+  }
+}
+.flash {
+  animation: blueflash 0.56s alternate ease-out;
+}
