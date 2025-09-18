@@ -248,3 +248,21 @@ margin-right: 75px;
     max-height: 300px;
     max-width: 300px;
 }
+
+.Ith {
+  white-space: nowrap;
+  filter: url(#filter);
+  outline: none;
+  font-size: 100px;
+  color: white;
+  
+  &::selection {
+    background: rgba(255,255,255,.2);
+  }
+}
+
+svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
