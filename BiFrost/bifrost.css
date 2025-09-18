@@ -20,6 +20,14 @@ margin-right: 75px;
     filter: drop-shadow(0px 0px 18px #000000);
 }
 
+.acord-cust{
+     margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    padding: 20px;
+    font-family: "Yrsa", serif;
+}
+
 .text-img{
     display: block;
     margin-left: auto;
@@ -52,6 +60,12 @@ margin-right: 75px;
 
 .BG-neph{
     background-image: linear-gradient(black, black, rgb(55, 18, 104));
+    padding-top: 50px;
+}
+
+.BG-space{
+     background-image: url("aldebaran-s-qtRF_RxCAo0-unsplash.jpg");
+    background-size: 100% 100%;
     padding-top: 50px;
 }
 
