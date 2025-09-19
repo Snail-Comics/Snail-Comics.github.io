@@ -1,3 +1,4 @@
+/*Background*/
 .body {
     background-color: rgb(46, 35, 54);
 }
@@ -6,6 +7,7 @@
     background-image: url("maxim-tajer-x3S1aGQNgro-unsplash.jpg");
 }
 
+/*Comic display*/
 img.pages {
     display: block;
     margin-top: 20px;
@@ -13,6 +15,7 @@ img.pages {
     margin-right: auto;
 }
 
+/*buttons*/
 div.buttons {
  text-align: center;
 }
@@ -32,6 +35,7 @@ div.buttons {
     background-color: rgb(155, 87, 219);
 }
 
+/*Nav bar*/
 .navb{
     width: 100%;
     max-width: none;
@@ -43,7 +47,6 @@ div.buttons {
     text-decoration-line: underline;
     text-decoration-style: wavy;  display:inline-block;
 }
-
 
 .navb button{
     float: right;
@@ -69,6 +72,5 @@ div.buttons {
     padding: 10px;
     font-size: 16px;
     margin-top: 25px;
-    text-decoration: none;
-   
+    text-decoration: none;  
 }
