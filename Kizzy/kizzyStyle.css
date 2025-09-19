@@ -1,8 +1,10 @@
+/*Background*/
 .body {
     background-color: rgb(0, 0, 0);
     background-image: url("kiwihug-3gifzboyZk0-unsplash.jpg");
 }
 
+/*Comic display*/
 img.pages {
     display: block;
     margin-top: 20px;
@@ -10,6 +12,7 @@ img.pages {
     margin-right: auto;
 }
 
+/*Buttons*/
 div.buttons {
  text-align: center;
 }
@@ -29,6 +32,7 @@ div.buttons {
     background-color: rgb(42, 218, 209);
 }
 
+/*Navbar*/
 .navb{
     width: 100%;
     max-width: none;
@@ -70,12 +74,15 @@ div.buttons {
    
 }
 
+/*Flash effect*/
+
 @keyframes blueflash {
   to {
     background-color: #beecfa;
     background-image: none;
   }
 }
+
 .flash {
   animation: blueflash 0.56s alternate ease-out;
 }

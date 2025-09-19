@@ -1,3 +1,4 @@
+/*Background things*/
 .bg{
     background-color: #1f1f60;
     background-image: url("pink_rice.png");
@@ -15,6 +16,7 @@ body {
     padding: 0px;
 }
 
+/*Buttons*/
 .halfButt{
     background-color: #846dd6;
     border: none;
@@ -41,6 +43,7 @@ body {
     width: 100%;
 }
 
+/*Nav Bar*/
 .navb{
     width: 100%;
     max-width: none;
@@ -66,35 +69,6 @@ body {
    
 }
 
-.hidden-text{
-    color: black;
-}
-
-.divs{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-style: solid;
-  border-width: 5px;
-  border-color: black;
-}
-
-.divs2{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-style: solid;
-  border-width: 2px;
-  border-color: black;
-}
-
-.card-group{
-    padding: 10px;
-}
-
-.card{
-    margin: 5px;
-    padding: 10px;
-}
-
 .navb a.active{
     text-decoration-line: underline;
     text-decoration-style: wavy;  display:inline-block;
@@ -111,8 +85,39 @@ body {
     margin-bottom: 5px;
 }
 
+/*Footer*/
+.hidden-text{
+    color: black;
+}
 
+/*Line div effect*/
+.divs{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
 
+.divs2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+/*Cards*/
+.card-group{
+    padding: 10px;
+}
+
+.card{
+    margin: 5px;
+    padding: 10px;
+}
+
+/*Text*/
 .title {
     color: white;
     font-family: "Delius", serif;
