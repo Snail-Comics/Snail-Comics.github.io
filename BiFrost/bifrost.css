@@ -92,6 +92,16 @@ margin-right: 75px;
     padding-top: 50px;
 }
 
+.BG-chase{
+    background-image: linear-gradient(black, rgb(11, 70, 11), black);
+    padding-top: 50px;
+}
+
+.BG-portfail{
+    background-image: linear-gradient(black,red, cyan, gold);
+    padding-top: 50px;
+}
+
 .yrsa {
     font-family: "Yrsa", serif;
     font-optical-sizing: auto;
