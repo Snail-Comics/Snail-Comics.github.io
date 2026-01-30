@@ -19,35 +19,39 @@ document.addEventListener("keyup", e => {
 
 function next() {
     pageNo++;
-    document.getElementById("page").src = displayNo + "/" + pageNo + '.jpg';
+    document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
 }
 
 function prev() {
     pageNo--;
-
-    if (pageNo < 1 && displayNo == 1){
+    getChapter();
+    //stays on first page of chapter until I can big brain some shit
+    if (pageNo < 1){
         pageNo = 1;
     }
-    //goes back to last page of folder
-    if (pageNo < 1 && displayNo > 1) {
-        displayNo--;
-        pageNo = CHlength[displayNo-1];
-    }
-    document.getElementById("page").src = displayNo + "/" + pageNo + '.jpg';
+    document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
 }
 
 function end() {
-    //changes to next folder
+    //changes to next folder 
+    getChapter();
     if (displayNo < CHlength.length)
     {
         pageNo = 1;
         displayNo++;
-        document.getElementById("page").src = displayNo + "/" + pageNo + '.jpg';
+        window.location.href = "../" + displayNo + "/" + displayNo + ".html";
     }
   else {
       pageNo--;
-      document.getElementById("page").src = displayNo + "/" + pageNo + '.jpg';
+      document.getElementById("page").src = pageNo + '.jpg';
   }
+}
+
+function getChapter(){
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    const arr = page.split(".");
+    displayNo= Number(arr[0]);
 }
