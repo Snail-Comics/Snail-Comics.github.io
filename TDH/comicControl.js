@@ -2,7 +2,7 @@ var pageNo = 1;
 var bgChange = document.getElementById('body');
 var displayNo = 1;
 
-const CHlength = [63, 35]
+const CHlength = [63, 35, 16]
 
 //keyboard support
 document.addEventListener("keyup", e => {
