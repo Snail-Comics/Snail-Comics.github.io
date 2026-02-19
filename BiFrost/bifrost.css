@@ -4,6 +4,12 @@
       padding: 0%;
       
 }
+
+.card-contain{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .card-cust{
 margin-top: 50px;
 margin-left: 75px;
@@ -83,6 +89,16 @@ margin-right: 75px;
 
 .BG-normal{
     background-color: #000000;
+    padding-top: 50px;
+}
+
+.BG-chase{
+    background-image: linear-gradient(black, rgb(11, 70, 11), black);
+    padding-top: 50px;
+}
+
+.BG-portfail{
+    background-image: linear-gradient(black,red, cyan, gold);
     padding-top: 50px;
 }
 

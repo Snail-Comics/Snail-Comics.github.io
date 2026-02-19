@@ -1,0 +1,162 @@
+/*Background things*/
+.bg{
+    background-color: #1f1f60;
+    background-image: url("pink_rice.png");
+    margin: 0px;
+    padding: 0px;
+}
+
+.sub-bg{
+    background-image: url("subtle_carbon.png");
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    background-size: auto;
+}
+
+/*Buttons*/
+.halfButt{
+    background-color: #846dd6;
+    border: none;
+    color: white;
+    font-family: "Delius", serif;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    margin: 5px;
+    width: 25%;
+}
+
+.spanButt{
+    background-color: #f6f6f8;
+    border: none;
+    color: rgb(49, 49, 49);
+    font-family: "Delius", serif;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    margin: 5px;
+    width: 100%;
+}
+
+/*Nav Bar*/
+.navb{
+    width: 100%;
+    max-width: none;
+    background-color: black;
+    overflow: hidden;
+}
+
+#nav-logo{
+    font-size: 18px;
+    text-align: center;
+    font-family: "Delius", serif;
+    padding: 10px;
+}
+
+.navb a{
+    float: left;
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 25px;
+    text-decoration: none;
+   
+}
+
+.navb a.active{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;  display:inline-block;
+}
+
+
+.navb button{
+    float: right;
+    text-align: center;
+    padding: 10px;
+    font-size: 25;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+/*Footer*/
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.hidden-text{
+    color: black;
+}
+
+/*Line div effect*/
+.divs{
+    clear: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.divs2{
+    clear: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+/*Cards*/
+.card-group{
+    padding: 10px;
+}
+
+.card{
+    margin: 5px;
+    padding: 10px;
+}
+
+/*Text*/
+.title {
+    color: white;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titleDark {
+    color: black;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text {
+    color: white;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.textDark {
+    color: black;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: justify;
+}
+
