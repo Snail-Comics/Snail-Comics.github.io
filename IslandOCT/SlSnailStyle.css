@@ -4,18 +4,6 @@ body.normal {
     background-color: black;
 }
 
-body.carcosa {
-    background-image: url('spooky.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-body.sploosh {
-    background-image: url('sploosh.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /*page display*/
 img.pages {
     display: block;
