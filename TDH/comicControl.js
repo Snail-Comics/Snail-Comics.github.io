@@ -1,8 +1,10 @@
 var pageNo = 1;
 var bgChange = document.getElementById('body');
+var backBTNChange = document.getElementById('backBTN');
+var nextBTNChange = document.getElementById('nextBTN');
 var displayNo = 1;
 
-const CHlength = [63, 35, 16]
+const CHlength = [63, 35, 16, 24]
 
 //keyboard support
 document.addEventListener("keyup", e => {
