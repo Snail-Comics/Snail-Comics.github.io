@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-    <script>var diaplayNo = 2;</script>
 </head>
 <body id="body" class="normal">
 
@@ -19,7 +18,7 @@
         <a id="nav-logo" href="https://snail-comics.github.io/">Snail-Comics</a>
         <a href="https://snail-comics.github.io/">Home</a>
         <a href="https://snail-comics.github.io/WIP.html">Characters</a>
-        <a href="https://snail-comics.github.io/WIP.html">Archive</a> 
+        <a href="../../Archive/archive.html">Archive</a> 
     </div>
 
     <!--Page Viewer-->
@@ -28,8 +27,8 @@
         <img class="pages" id="page" src="1.jpg" onclick="next()" onerror="end()"> </img>
     <div class="buttons">
         <br/> <br/>
-        <button class="button" onclick="prev()">BACK</button>
-        <button class="button" onclick="next()">NEXT</button>
+        <button class="button" id="backBTN" onclick="prev()">BACK</button>
+        <button class="button" id="nextBTN" onclick="next()">NEXT</button>
     </div>
     </div>
 </body>
