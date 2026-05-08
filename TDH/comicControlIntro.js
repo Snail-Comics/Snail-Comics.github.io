@@ -1,7 +1,8 @@
 var pageNo = 1;
+var bgChange = document.getElementById('body');
 var displayNo = 1;
 
-const CHlength = [63, 35, 16, 24]
+const CHlength = [63, 35]
 
 //keyboard support
 document.addEventListener("keyup", e => {
@@ -18,7 +19,6 @@ document.addEventListener("keyup", e => {
 
 function next() {
     pageNo++;
-    getChapter();
     pageSwitch();
     document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
@@ -26,12 +26,6 @@ function next() {
 
 function prev() {
     pageNo--;
-    if (pageNo < 1){
-        getChapter();
-        var previousPart = (displayNo -1).toString();
-        var newURL = "https://snail-comics.github.io/TDH/Pages/" + previousPart + "/" + previousPart + ".html";
-        window.location.replace(newURL);
-    }
     pageSwitch();
     document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
@@ -39,42 +33,26 @@ function prev() {
 
 function end() {
     //changes to next folder 
-    getChapter();
-    if (displayNo < CHlength.length)
-    {
-        pageNo = 1;
-        displayNo++;
-        window.location.href = "../" + displayNo + "/" + displayNo + ".html";
-    }
-  else {
-      pageNo--;
-      document.getElementById("page").src = pageNo + '.jpg';
-  }
-}
-
-function getChapter(){
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
-    const arr = page.split(".");
-    displayNo= Number(arr[0]);
+        window.location.href = "../2/2.html";
 }
 
 function pageSwitch(){
-    var backBTNChange = document.getElementById('backBTN');
    switch (pageNo){
     case 1:
             //hides button
-           backBTNChange.innerHTML = "PREVIOUS PART";
+            var backBTNChange = document.getElementById('backBTN');
+           backBTNChange.setAttribute("hidden", "hidden");
            break;
         case 2:
-            backBTNChange.innerHTML = "BACK";
+            var backBTNChange = document.getElementById('backBTN');
+            var hide = backBTNChange.getAttribute("hidden");
+            backBTNChange.removeAttribute(hide);
             break;
        default:
            break;
     }
     var nextBTNChange = document.getElementById('nextBTN');
-    var lastPanel = displayNo - 1;
-    var end = CHlength[lastPanel];
+    var end = CHlength[0];
    if (pageNo == end)
     {
         nextBTNChange.innerHTML = "NEXT PART";

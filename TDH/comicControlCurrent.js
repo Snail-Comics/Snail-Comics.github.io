@@ -63,7 +63,6 @@ function pageSwitch(){
     var backBTNChange = document.getElementById('backBTN');
    switch (pageNo){
     case 1:
-            //hides button
            backBTNChange.innerHTML = "PREVIOUS PART";
            break;
         case 2:
@@ -77,10 +76,12 @@ function pageSwitch(){
     var end = CHlength[lastPanel];
    if (pageNo == end)
     {
-        nextBTNChange.innerHTML = "NEXT PART";
+        nextBTNChange.setAttribute("hidden", "hidden");
     }
    else
    {
+        var hide = nextBTNChange.getAttribute("hidden");
+        nextBTNChange.removeAttribute(hide);
        nextBTNChange.innerHTML = "NEXT";
    }
     return;
