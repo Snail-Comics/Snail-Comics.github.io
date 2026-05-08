@@ -1,7 +1,4 @@
 var pageNo = 1;
-var bgChange = document.getElementById('body');
-var backBTNChange = document.getElementById('backBTN');
-var nextBTNChange = document.getElementById('nextBTN');
 var displayNo = 1;
 
 const CHlength = [63, 35, 16, 24]
@@ -21,17 +18,21 @@ document.addEventListener("keyup", e => {
 
 function next() {
     pageNo++;
+    getChapter();
+    pageSwitch();
     document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
 }
 
 function prev() {
     pageNo--;
-    getChapter();
-    //stays on first page of chapter until I can big brain some shit
     if (pageNo < 1){
-        pageNo = 1;
+        getChapter();
+        var previousPart = (displayNo -1).toString();
+        var newURL = "https://snail-comics.github.io/TDH/Pages/" + previousPart + "/" + previousPart + ".html";
+        window.location.replace(newURL);
     }
+    pageSwitch();
     document.getElementById("page").src = pageNo + '.jpg';
     window.scrollTo(0, 0);
 }
@@ -56,4 +57,31 @@ function getChapter(){
     var page = path.split("/").pop();
     const arr = page.split(".");
     displayNo= Number(arr[0]);
+}
+
+function pageSwitch(){
+    var backBTNChange = document.getElementById('backBTN');
+   switch (pageNo){
+    case 1:
+            //hides button
+           backBTNChange.innerHTML = "PREVIOUS PART";
+           break;
+        case 2:
+            backBTNChange.innerHTML = "BACK";
+            break;
+       default:
+           break;
+    }
+    var nextBTNChange = document.getElementById('nextBTN');
+    var lastPanel = displayNo - 1;
+    var end = CHlength[lastPanel];
+   if (pageNo == end)
+    {
+        nextBTNChange.innerHTML = "NEXT PART";
+    }
+   else
+   {
+       nextBTNChange.innerHTML = "NEXT";
+   }
+    return;
 }
